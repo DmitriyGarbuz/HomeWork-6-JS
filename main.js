@@ -19,11 +19,13 @@ sumAll(4);
 //Task3 A function which takes str and time in seconds as arguments, then every second it should count down from time to 0 and print current time to console when time equals to 0 it prints str
 
 function bombTimer(str, time) {
-    for (i=time ;; i--) {
-  console.log(i);
-  if (i<1) break;
+    let n = time;
+let timer = setInterval (() => {
+    if (n>=0) {console.log(n); n--;}else{
+        console.log('Task 3 ' + str);
+        clearInterval(timer);
     }
-    return console.log (str);
+},1000); 
     }
 bombTimer('Boooom', 3);
 
