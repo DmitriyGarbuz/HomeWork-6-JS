@@ -21,7 +21,7 @@ sumAll(4);
 function bombTimer(str, time) {
     let n = time;
 let timer = setInterval (() => {
-    if (n>=0) {console.log(n); n--;}else{
+    if (n>=0) {console.log('Task 3 ' + n); n--;}else{
         console.log('Task 3 ' + str);
         clearInterval(timer);
     }
@@ -49,3 +49,17 @@ let timer = setInterval (() => {
 },2000); 
     }
 bombTimer2('Boooom', 5);
+
+// Task 6 A function which takes an array of numbers and maxNumber, the function returns new array with numbers not higher than maxNumber.
+
+function filterNumbers(arr, maxNumber) { 
+let newArray = [];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < maxNumber){
+    newArray.push(arr[i]);
+    }
+}
+console.log(newArray ,'- Task6');
+}
+
+filterNumbers([1, 4, 8, 1, 20], 5) // [1, 4, 1]
