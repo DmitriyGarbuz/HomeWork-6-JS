@@ -21,7 +21,7 @@ sumAll(4);
 function bombTimer(str, time) {
     let n = time;
 let timer = setInterval (() => {
-    if (n>=0) {console.log('Task 3 ' + n); n--;}else{
+    if (n>=0) {console.log('Task 3 ', n); n--;}else{
         console.log('Task 3 ' + str);
         clearInterval(timer);
     }
